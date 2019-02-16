@@ -1,4 +1,5 @@
 let ls = require("./ls").list;
+const stdin = require("./stdin");
 function repl(data,callback){
     switch (data) {
         case "ls\n":
@@ -7,6 +8,7 @@ function repl(data,callback){
 
         default:
             console.log("Incorrect input :(");
+            stdin.stdin();
             break;
     }
 }
