@@ -1,12 +1,12 @@
-let ls = require("./ls").list
+let ls = require("./ls").list;
 function repl(data,callback){
     switch (data) {
         case "ls\n":
-            ls()
+            ls();
             break;
-        
+
         default:
-            console.log("Incorrect input :(")
+            console.log("Incorrect input :(");
             break;
     }
 }

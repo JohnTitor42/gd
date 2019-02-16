@@ -1,5 +1,5 @@
-const key = require("../secr/credentials.json")
-const { google } = require("googleapis")
+const key = require("../secr/credentials.json");
+const { google } = require("googleapis");
 
 
 const jwToken = new google.auth.JWT(
